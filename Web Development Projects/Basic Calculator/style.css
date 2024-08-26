@@ -1,0 +1,61 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: black;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.display {
+    background-color: black;
+    color: white;
+    text-align: right;
+    font-size: 48px;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    color: black;
+}
+
+.buttons.orange {
+    background-color: orange;
+    color: white;
+}
+
+.buttons.gray {
+    background-color: #333;
+    color: white;
+}
+
+.buttons.zero {
+    grid-column: span 2;
+    width: 100%;
+    border-radius: 30px;
+}
